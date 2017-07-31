@@ -86,7 +86,7 @@ $(document).ready(
 
 			// changes main img to sun picture
 			$(anchor).attr('alt','Sun');
-			$(anchor).attr('src','img/Sun.png');
+			$(anchor).attr('src','img/sun.png');
 
 			// changes logo to sun
 			$(logo).attr('alt','Sun');
