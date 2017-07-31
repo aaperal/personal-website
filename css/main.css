@@ -226,14 +226,7 @@ body {
 		font-size: 1.5em;
 	}
 
-	/* Allows image to get a little larger */
-	.img-container {
 
-		max-width: 60vh;
-		max-height: 60vh;
-		padding: 5% 0;
-
-	}
 }
 
 
