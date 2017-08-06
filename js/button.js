@@ -20,9 +20,9 @@ $(document).ready(
 		var links = document.getElementById('nav-links');
 		
 		// makes the logo fade out
-		$(anchor).animate({
-			opacity: '0.1'
-		}, 'slow');
+		// $(anchor).animate({
+		// 	opacity: '0.1'
+		// }, 'slow');
 		
 		if (sessionStorage.myValue == 'true') {
 			
@@ -76,8 +76,8 @@ $(document).ready(
 			}
 		}	
 			// makes the logo fade in
-			$(anchor).animate({
-			opacity: '1.0'
-		}, 'slow');
+		// 	$(anchor).animate({
+		// 	opacity: '1.0'
+		// }, 'slow');
 	}
 )
