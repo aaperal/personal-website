@@ -1,0 +1,245 @@
+/********************
+ *
+ * NAVBAR STYLING
+ *
+ ********************/
+
+
+/* Styles the top navigation bar */
+.navbar {
+	background: #AAB7B8 !important; /* Old browsers */
+	background-image: linear-gradient(top, #ccbbaa 1%, #bbbbbb 48%, #aabbcc 99%);
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.00625142271852, #ccbbaa), color-stop(0.4790142, #bbbbbb), color-stop(0.9914080063835602, #aabbcc)) !important;
+	background-image: -moz-linear-gradient(top, #ccbbaa 1%, #bbbbbb 48%, #aabbcc 99%);
+	background-image: -o-linear-gradient(top, #ccbbaa 1%, #bbbbbb 48%, #aabbcc 99%);
+	background-image: -ms-linear-gradient(top, #ccbbaa 1%, #bbbbbb 48%, #aabbcc 99%);
+
+
+	margin-bottom: 0;
+	border-color: black;
+	border-radius: 0;
+	height: auto;
+
+}
+
+.navbar-night {
+	border-color: white;
+}
+
+/* Makes the text and the separators between sections black */
+.nav.navbar-nav.day li a, 
+.nav.navbar-nav.day li:after {
+	color: #2E2322;
+	color: black;
+	border-right: 1px solid black;
+}
+
+.nav.navbar-nav.night li a, .nav.navbar-nav.night li:after {
+	color: white;
+	border-right: 1px solid white;
+}
+
+/* Makes active tab dark gray */
+.nav.navbar-nav.day .active a, .nav.navbar-nav.night .active a {
+	background-color: darkgray ;
+}
+
+
+/********************
+ *
+ * IMAGE/LOGO STYLING
+ *
+ ********************/
+
+/* Ensures image doesn't get too big */
+
+.img-container {
+
+	max-width: 30%;
+	max-height: 30%;
+	max-width: 30vh;
+	max-height: 30vh;
+	padding: 7% 0;
+
+}
+
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+/********************
+ *
+ * BODY STYLING
+ *
+ ********************/
+
+
+
+/* Arranges body in column, custom font */
+body {
+
+	margin: 0;
+	display: flex; 
+	flex-direction: column;
+	font-family: 'Quicksand', 'sans-serif';
+	overflow: hidden;
+
+}
+
+/* changes my personal description */
+#blurb {
+	padding-top: 5vh;
+	text-align: justify;
+}
+
+/* Handles the text,image, styling when theme is "day" */
+.main-text-day {
+
+	width: 100%;
+	vertical-align: middle;
+	height: 100vh;
+	padding-top: 20vh;
+	color: black;
+
+	background: #EC7063; /* old browsers */
+	background-image: linear-gradient(top, #e5a073 0%, #e96164 50%, #ee2255 100%);
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #e5a073), color-stop(0.5, #e96164), color-stop(1, #ee2255));
+	background-image: -moz-linear-gradient(top, #e5a073 0%, #e96164 50%, #ee2255 100%);
+	background-image: -o-linear-gradient(top, #e5a073 0%, #e96164 50%, #ee2255 100%);
+	background-image: -ms-linear-gradient(top, #e5a073 0%, #e96164 50%, #ee2255 100%);
+}
+
+/* Changes colour of "day" hyperlinks */
+.main-text-day a {
+	color: white;
+}
+
+/* Handles the text, image, styling when theme is "night" */
+.main-text-night {
+
+	width: 100%;
+	vertical-align: middle;
+	height: 100vh;
+	padding-top: 20vh;
+	color: white;
+	
+	
+
+	background: #34495E; /* old browsers */
+	background-image: linear-gradient(top, #024e74 0%, #000203 50%, #000203 100%);
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #024e74), color-stop(0.5, #000203), color-stop(1, #000203));
+	background-image: -moz-linear-gradient(top, #024e74 0%, #000203 50%, #000203 100%);
+	background-image: -o-linear-gradient(top, #024e74 0%, #000203 50%, #000203 100%);
+	background-image: -ms-linear-gradient(top, #024e74 0%, #000203 50%, #000203 100%);
+
+
+}
+
+/* changes the colour of "night" hyperlinks */
+.main-text-night a {
+	color: orange;
+}
+
+
+/********************
+ *
+ * MEDIA QUERIES
+ *
+ ********************/
+
+
+@media only screen and (min-width: 600px) {
+	/* The short description of me updates */
+	#blurb {
+
+		padding: 10vh 10vw 0 10vw;
+		text-align: justify
+
+	}
+	/* Allows image to get a little larger */
+	.img-container {
+
+		max-width: 40vh;
+		max-height: 40vh;
+
+	}
+
+	/* Makes the fonts a little bigger */
+	h1 {
+		font-size: 3em;
+	}
+	h4 {
+		font-size: 1.75em;
+	}
+	p {
+		font-size: 1.2em;
+	}
+
+}
+
+@media only screen and (min-width: 768px) {
+
+
+	/* Makes the fonts a little bigger */
+	h1 {
+		font-size: 3.7em;
+	}
+	h4 {
+		padding-top: 0vh;
+		font-size: 1.75em;
+	}
+	p {
+		font-size: 1.3em;
+	}
+
+	/* Edits my little decription */
+	#blurb {
+
+		padding: 6vh 20vw 0 20vw;
+		margin-bottom: 0;
+
+	}
+
+	/* Allows image to get a little larger */
+	.img-container {
+
+		max-width: 50vh;
+		max-height: 50vh;
+
+	}
+}
+
+@media only screen and (min-width: 1024px) {
+
+
+	/* Makes the fonts a little bigger */
+	h1 {
+		font-size: 4em;
+	}
+	h4 {
+		padding-top: 0vh;
+		font-size: 2em;
+	}
+	p {
+		font-size: 1.5em;
+	}
+
+
+}
+
+
+#footer {
+
+	font-size: 0.5em;
+	padding-top: 20vh;
+	padding-right: 5vh;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+
+}
+
+
+    
