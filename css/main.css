@@ -53,6 +53,17 @@
 
 /* Ensures image doesn't get too big */
 
+.thumb-post {
+  display: inline-block;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  float: right;
+
+  object-fit: cover;
+ 
+}
+
 .img-container {
 
 	max-width: 30%;
@@ -69,13 +80,13 @@ img {
 	max-height: 100%;
 }
 
+
+
 /********************
  *
  * BODY STYLING
  *
  ********************/
-
-
 
 /* Arranges body in column, custom font */
 body {
@@ -84,7 +95,7 @@ body {
 	display: flex; 
 	flex-direction: column;
 	font-family: 'Quicksand', 'sans-serif';
-	overflow: hidden;
+	overflow: auto;
 
 }
 
@@ -94,14 +105,21 @@ body {
 	text-align: justify;
 }
 
+/* adding padding to text on about section */
+#text-blurb {
+	padding-bottom: 10vh;
+}
+
+
 /* Handles the text,image, styling when theme is "day" */
 .main-text-day {
 
 	width: 100%;
 	vertical-align: middle;
-	height: 100vh;
+	height: 100%;
 	padding-top: 20vh;
 	color: black;
+	position: fixed;
 
 	background: #EC7063; /* old browsers */
 	background-image: linear-gradient(top, #e5a073 0%, #e96164 50%, #ee2255 100%);
@@ -121,10 +139,10 @@ body {
 
 	width: 100%;
 	vertical-align: middle;
-	height: 100vh;
+	height: 100%;
 	padding-top: 20vh;
 	color: white;
-	
+	position: fixed;
 	
 
 	background: #34495E; /* old browsers */
@@ -142,6 +160,11 @@ body {
 	color: orange;
 }
 
+/* Allows scroll on pages with longer blurbs */
+.main-text-scroll {
+	position: relative;
+}
+
 
 /********************
  *
@@ -149,6 +172,20 @@ body {
  *
  ********************/
 
+@media only screen and (max-width: 599px) {
+	.thumb-post {
+		width: 100px;
+		height: 100px;
+	}
+
+	#blurb {
+		padding-top: 0vh;
+	}
+
+	.main-text-scroll {
+		padding-top: 15vh;
+	}
+}
 
 @media only screen and (min-width: 600px) {
 	/* The short description of me updates */
@@ -166,6 +203,12 @@ body {
 
 	}
 
+	.main-text-scroll {
+		padding-top: 5vh;
+		/*position: fixed;*/
+	}
+
+
 	/* Makes the fonts a little bigger */
 	h1 {
 		font-size: 3em;
@@ -179,7 +222,7 @@ body {
 
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 769px) {
 
 
 	/* Makes the fonts a little bigger */
@@ -226,7 +269,6 @@ body {
 		font-size: 1.5em;
 	}
 
-
 }
 
 
@@ -240,6 +282,7 @@ body {
 	right: 0;
 
 }
+
 
 
     
